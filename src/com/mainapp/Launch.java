@@ -19,6 +19,9 @@ public class Launch {
 		EntityManager em = ef.createEntityManager();
 		
 		System.out.println(em); // ---> SessionImpl(589610983<open>)
+		
+		em.close();
+		ef.close();
 
 	}
 
