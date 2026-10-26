@@ -13,6 +13,7 @@ public class Launch {
 		
 		// The Persistence is the class that gives the object of the Hibernate impl of the JPA's EntityManagerFactory (I).
 		// This ef gives us the connection pool of 20 conns for testing, no improvement in it.
+		// The config is mapped with the persistence.xml 
 		EntityManagerFactory ef = Persistence.createEntityManagerFactory("config");
 		
 		// em is the actual obj through which we perform CRUD ops
